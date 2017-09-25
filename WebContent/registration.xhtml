@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Registration</title>
+</head>
+<style>
+body{background-color:#7fffd4}
+</style>
+<h:body>
+	<h:form id="loginform">
+	<h:outputLabel value="First Name:"/>
+		<h:inputText value="#{RegistrationBean.firstname}"
+		required="true"
+               requiredMessage="First Name shouldn't be empty/><br/>
+		<h:outputLabel value="Last Name:"/>
+		<h:inputText value="#{RegistrationBean.lastname}"
+		required="true"
+               requiredMessage="Last Name shouldn't be empty/><br/>
+	<h:outputLabel value="Email-id:"/>
+		<h:inputText value="#{RegistrationBean.emailid}"
+		required="true"
+               requiredMessage="email id  shouldn't be empty/><br/>
+		<h:outputLabel value="Address:"/>
+		<h:inputText value="#{RegistrationBean.address}"
+		required="true"
+               requiredMessage="Address shouldn't be empty/><br/>
+		<h:outputLabel value="Phone No"/>
+		<h:inputText value="#{RegistrationBean.phn_no}"
+		required="true"
+               requiredMessage="Phone no shouldn't be empty/><br/>
+		<h:outputLabel value="Username:"/>
+		<h:inputText value="#{RegistrationBean.username}"
+		required="true"
+               requiredMessage="User name shouldn't be empty/><br/>
+		<h:outputLabel value="Password:"/>
+		<h:inputSecret value="#{RegistrationBean.password}"
+		required="true"
+               requiredMessage="Password shouldn't be empty/><br/>
+		<h:commandButton value="Submit" action="#{RegistrationBean.registraion}"/>
+		</h:form>
+</h:body></html>
