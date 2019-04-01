@@ -6,10 +6,7 @@ import javax.faces.bean.ManagedBean;
 public class RegistrationBean 
 {
 	@ManagedBean(name="loginBean",eager=true)
-
-	public class loginBean 
-	{
-		private String firstname;
+	private String firstname;
 		private String lastname;
 		private String emailid;
 		private String address;
@@ -79,6 +76,6 @@ public class RegistrationBean
 		{
 				return("Success");	
 		}
-	}
+	
 }
 
